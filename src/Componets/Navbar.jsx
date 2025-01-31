@@ -50,36 +50,38 @@ function Navbar() {
       </div>
 
       {/* Mobile Navigation Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white/80 shadow-lg rounded-lg p-4 absolute top-16 right-4 w-48">
-          <div className="flex flex-col space-y-2">
-            <a
-              href="#about"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
-            >
-              Skills
-            </a>
-            <a
-              href="#projects"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
-            >
-              Projects
-            </a>
-            <a
-              href="#testimonials"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
-            >
-              Testimonials
-            </a>
-            <a
-              href="#contact"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      )}
+{/* Mobile Navigation Menu */}
+{mobileMenuOpen && (
+  <div className="md:hidden bg-white/80 shadow-lg rounded-lg p-4 absolute top-full right-0 w-max">
+    <div className="flex flex-col space-y-2">
+      <a
+        href="#about"
+        className="block rounded-md px-6 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
+      >
+        Skills
+      </a>
+      <a
+        href="#projects"
+        className="block rounded-md px-6 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
+      >
+        Projects
+      </a>
+      <a
+        href="#testimonials"
+        className="block rounded-md px-6 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
+      >
+        Testimonials
+      </a>
+      <a
+        href="#contact"
+        className="block rounded-md px-6 py-2 text-base font-medium text-gray-700 hover:bg-gray-200"
+      >
+        Contact
+      </a>
+    </div>
+  </div>
+)}
+
     </header>
   );
 }
