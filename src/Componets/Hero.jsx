@@ -58,7 +58,7 @@ function Hero() {
 
           {/* Card Component */}
           <div
-            className="md:w-1/2 relative flex justify-center items-end"
+            className="md:w-1/2 relative flex justify-center items-end mb-10"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
