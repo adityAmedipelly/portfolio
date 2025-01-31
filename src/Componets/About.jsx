@@ -13,82 +13,83 @@ import NextJs from "../assets/NextJs.png";
 import postgre from "../assets/postgre.png";
 import and from "../assets/and.png";
 
-
-const skills = [
-  [
-    // First row (4 skills)
-    { img: Javascript, name: "JavaScript" },
-    { img: typescript, name: "TypeScript" },
-    { img: NodeLogo, name: "Node.Js" },
-    { img: Tailwind, name: "Tailwind.Css" },
-  ],
-  [
-    // Second row (3 skills)
-    { img: Express, name: "Express" },
-    { img: ReactLogo, name: "React.Js" },
-    { img: NextJs, name: "Next.JS" },
-    { img: Html, name: "Html" },
-  ],
-
-  [
-    // Second row (3 skills)
-    { img: docker, name: "Docker" },
-    { img: kubernetes, name: "Kubernetes" },
-    { img: gitC, name: "git" },
-  ],
-  
-  [
-    // Third row (2 skills)
-    { img: Mongodb, name: "MongoDB" },
-    { img: postgre, name: "postgresql" },
-  ],
-
-  [
-    // Third row (2 skills)
-    
-    { img: and, name: "More" },
-  ],
-
-  
-];
-
 const About = () => {
   return (
-    <div className="relative" id="about">
-      <div className="bg-gray-100 py-12 flex justify-center items-center">
-        <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center">
-            <div className="border border-red-200 rounded-lg md:p-7 py-7 flex flex-col gap-8 items-center shadow-lg shadow-red-300 max-w-2xl w-full">
-              <h3 className="text-2xl font-semibold">
-                <span className="text-blue-400">Code</span>
-                <span className="text-red-600"> Skills</span>
-              </h3>
-
-              <div className="flex flex-col gap-4">
-                {skills.map((row, rowIndex) => (
-                  <div key={rowIndex} className="flex justify-center gap-4">
-                    {row.map((skill, index) => (
-                      <div
-                        key={index}
-                        className="border border-red-300 flex items-center gap-1 px-3 py-2 rounded-lg shadow-md shadow-red-300"
-                      >
-                        <img
-                          src={skill.img}
-                          alt={skill.name}
-                          className="w-10"
-                        />
-                        <span className="font-semibold">{skill.name}</span>
+      <div className='relative' id='about' >
+          <div className='bg-gray-100 py-12 flex items-center justify-center '>
+              <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center'>
+                  
+                  <div className='mt-10 flex items-center justify-center'>
+                      <div className='grid grid-cols-1 gap-12 lg:grid-cols-2 items-center justify-center'>
+                       
+                          <div className='border border-red-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center justify-center shadow-lg shadow-red-300'>
+                              <h3 className='text-2xl font-semibold text-red-600'>Skills & Expertise</h3>
+                              <div className='flex items-center justify-center flex-wrap gap-3'>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={Html} alt="" className='w-10' />
+                                      <span className='font-semibold'>HTML</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={docker} alt="" className='w-8' />
+                                      <span className='font-semibold'>CSS</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={Javascript} alt="" className='w-10' />
+                                      <span className='font-semibold'>Javascript</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={ReactLogo} alt="" className='w-8 rounded-full' />
+                                      <span className='font-semibold'>React</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={postgre} alt="" className='w-8' />
+                                      <span className='font-semibold'>Redux</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={Tailwind} alt="" className='w-8 rounded-full' />
+                                      <span className='font-semibold'>Tailwind Css</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={kubernetes} alt="" className='w-10' />
+                                      <span className='font-semibold'>Bootstrap</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={NodeLogo} alt="" className='w-10' />
+                                      <span className='font-semibold'>Node Js</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={Mongodb} alt="" className='w-10' />
+                                      <span className='font-semibold'>Mongodb</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={Express} alt="" className='w-10' />
+                                      <span className='font-semibold'>Express Js</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={NextJs} alt="" className='w-9' />
+                                      <span className='font-semibold'>Next Js</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={typescript} alt="" className='w-9' />
+                                      <span className='font-semibold'>Next Js</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={gitC} alt="" className='w-9' />
+                                      <span className='font-semibold'>Next Js</span>
+                                  </div>
+                                  <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                      <img src={and} alt="" className='w-9' />
+                                      <span className='font-semibold'>Next Js</span>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    ))}
                   </div>
-                ))}
+                 
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
