@@ -1,18 +1,18 @@
-import Portfolio from "../assets/Portfolio.png";
+import coder from "../assets/coder.png";
 import SpicyBites from "../assets/SpicyBites.png";
 import Youtube from "../assets/Youtube.png";
-import Webelite from "../assets/Webelite.png";
+import employee from "../assets/employee.png";
 import Supercar from "../assets/Supercar.png";
 import Cards from "./Cards";
 
 const Projects = () => {
   const projectJson = [
     {
-      title: "Portfolio",
-      desc: "Webelite Builders did an amazing job on our website. Their professionalism and dedication to our project were outstanding.",
-      image: Portfolio,
-      live: "https://rohitsingh93300-portfolio.vercel.app/",
-      github: "https://github.com/rohitsingh93300/portfolio",
+      title: "AI Code Reviewer",
+      desc: "Build an AI code reviewer with the MERN stack! 🚀 Use AI to analyze, review, and improve code, enhancing development efficiency.",
+      image: coder,
+      live: "https://ai-code-reviewer-cyp8.vercel.app/",
+      github: "https://github.com/adityAmedipelly/AI-Code-Reviewer",
     },
     {
       title: "Spicy Bites",
@@ -29,12 +29,13 @@ const Projects = () => {
       github: "https://github.com/rohitsingh93300/YouTube-clone",
     },
     {
-      title: "Webelite builder",
-      desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Webelite,
-      live: "https://www.webelitebuilders.com/",
-      github: "#",
+      title: "Employee Management System",
+      desc: "Built an Employee Management System with React JS and Local Storage, allowing admins to assign tasks 📝 and employees to mark them as complete ✅",
+      image: employee,
+      live: "https://aditec.netlify.app/",
+      github: "https://github.com/adityAmedipelly/employee-management-system",
     },
+    
     {
       title: "Super Car",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
