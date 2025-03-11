@@ -21,7 +21,7 @@ const Contact = () => {
         (result) => {
           console.log("✅ Email sent successfully:", result.text);
           setMessageSent(true);
-          form.current.reset(); // Clear form after sending
+          form.current.reset(); 
         },
         (error) => {
           console.log("❌ Error sending email:", error.text);
