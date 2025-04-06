@@ -6,10 +6,9 @@ import contact from "../assets/Contact.json";
 const Contact = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
-
+  
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
     .sendForm(
       "service_0bgaxgd",  
@@ -90,7 +89,6 @@ const Contact = () => {
             <button type="submit" className="bg-red-500 text-white px-3 py-2 rounded-lg cursor-pointer">
               Send Message
             </button>
-
             {messageSent && <p className="text-green-500 mt-3">✅ Message sent successfully!</p>}
           </form>
         </div>
