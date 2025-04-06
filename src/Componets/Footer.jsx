@@ -1,5 +1,4 @@
 
-
 const Footer = () => {
   return (
     <footer className=' py-4 relative'>
@@ -12,4 +11,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
